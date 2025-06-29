@@ -72,7 +72,7 @@ const LoginForm = ({ setSelected }) => {
       .order("firstname", { ascending: true })
       .order("lastname", { ascending: true });
     if (doctorRes.error) {
-      console.log("Doctors could not be extracted!");
+      console.log("doctor data could not be extracted");
     } else {
       setDoctorData(doctorRes.data);
     }
