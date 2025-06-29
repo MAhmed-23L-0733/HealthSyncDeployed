@@ -65,7 +65,7 @@ const MyAppointmentCard = ({ appointment }) => {
   }
   return (
     <>
-      <div className="w-90 lg:w-170 rounded-2xl border-gray-400 border-2 p-2 lg:p-5 space-y-5 lg:space-y-0 text-left hover:shadow-gray-600 hover:shadow-md hover:border-0 transition-all duration-100 ease-linear">
+      <div className="w-75 lg:w-170 rounded-2xl border-gray-400 border-2 p-2 lg:p-5 space-y-5 lg:space-y-0 text-left hover:shadow-gray-600 hover:shadow-md hover:border-0 transition-all duration-100 ease-linear">
         <div className="flex justify-between text-sm lg:text-lg">
           <p>
             <span className="font-semibold">Appointment Date:</span>{" "}
