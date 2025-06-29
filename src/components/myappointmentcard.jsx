@@ -65,7 +65,7 @@ const MyAppointmentCard = ({ appointment }) => {
   }
   return (
     <>
-      <div className="w-75 lg:w-170 rounded-2xl border-gray-400 border-2 p-2 lg:p-5 space-y-5 lg:space-y-0 text-left hover:shadow-gray-600 hover:shadow-md hover:border-0 transition-all duration-100 ease-linear">
+      <div className="w-80 lg:w-170 rounded-2xl border-gray-400 border-2 p-2 lg:p-5 space-y-5 lg:space-y-0 text-left hover:shadow-gray-600 hover:shadow-md hover:border-0 transition-all duration-100 ease-linear">
         <div className="flex justify-between text-sm lg:text-lg">
           <p>
             <span className="font-semibold">Appointment Date:</span>{" "}
@@ -150,7 +150,7 @@ const MyAppointmentCard = ({ appointment }) => {
               <p>Add Notes:</p>
               <textarea
                 type="text"
-                className="h-35 w-85 lg:w-90 rounded-xl lg:rounded-2xl border-2 border-gray-400 mt-2 p-2 resize-none text-sm lg:text-lg"
+                className="h-35 w-70 lg:w-90 rounded-xl lg:rounded-2xl border-2 border-gray-400 mt-2 p-2 resize-none text-sm lg:text-lg"
                 ref={notes}
               />
             </div>

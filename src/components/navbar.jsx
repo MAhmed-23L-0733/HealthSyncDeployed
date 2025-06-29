@@ -47,11 +47,11 @@ const Navbar = ({ selected, setSelected, setSignup }) => {
       )}
 
       {selected == "logged" && (
-        <div className="flex items-center gap-x-2">
+        <div className="flex items-center">
           {/* good morning message */}
           {now.getHours() >= 7 && now.getHours() < 12 && (
             <p
-              className={`text-[10px] lg:text-sm w-10 ${
+              className={`text-[10px] lg:text-sm w-20 ${
                 currUserData.role == "Doctor" && "lg:w-40"
               }`}
             >{`Good Morning, ${currUserData.role == "Doctor" ? "Dr. " : ""} ${
@@ -61,7 +61,7 @@ const Navbar = ({ selected, setSelected, setSignup }) => {
           {/* good afternoon message */}
           {now.getHours() >= 12 && now.getHours() < 18 && (
             <p
-              className={`text-[10px] lg:text-sm w-10 ${
+              className={`text-[10px] lg:text-sm w-20 ${
                 currUserData.role == "Doctor" && "lg:w-40"
               }`}
             >{`Good Afternoon, ${currUserData.role == "Doctor" ? "Dr. " : ""} ${
@@ -71,7 +71,7 @@ const Navbar = ({ selected, setSelected, setSignup }) => {
           {/* good evening message */}
           {now.getHours() >= 18 && (
             <p
-              className={`text-[10px] lg:text-sm w-10 ${
+              className={`text-[10px] lg:text-sm w-20 ${
                 currUserData.role == "Doctor" && "lg:w-40"
               }`}
             >{`Good Evening, ${currUserData.role == "Doctor" ? "Dr. " : ""} ${
@@ -81,7 +81,7 @@ const Navbar = ({ selected, setSelected, setSignup }) => {
           {/* good night message */}
           {now.getHours() >= 0 && now.getHours() < 7 && (
             <p
-              className={`text-[10px] lg:text-sm w-10 lg:w-35 ${
+              className={`text-[10px] lg:text-sm w-20 lg:w-35 ${
                 currUserData.role == "Doctor" && "lg:w-40"
               }`}
             >{`Good Night, ${currUserData.role == "Doctor" ? "Dr. " : ""}  ${
