@@ -146,7 +146,7 @@ const MyAppointmentCard = ({ appointment }) => {
                 />
               </div>
             </div>
-            <div>
+            <div className="place-self-center">
               <p>Add Notes:</p>
               <textarea
                 type="text"

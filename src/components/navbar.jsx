@@ -47,7 +47,7 @@ const Navbar = ({ selected, setSelected, setSignup }) => {
       )}
 
       {selected == "logged" && (
-        <div className="flex items-center">
+        <div className="flex items-center lg:gap-x-2">
           {/* good morning message */}
           {now.getHours() >= 7 && now.getHours() < 12 && (
             <p
