@@ -12,9 +12,9 @@ const FeedBackCard = ({ feedback }) => {
   }
   return (
     <>
-      <div className="p-5 w-90 lg:w-[60vw] rounded-2xl border-2 border-gray-400">
-        <div className="flex justify-between items-center text-sm">
-          <h1 className="text-sm w-35 lg:w-60">
+      <div className="p-2 lg:p-5 w-90 lg:w-[60vw] rounded-2xl border-2 border-gray-400">
+        <div className="lg:flex justify-between items-center text-sm">
+          <h1 className="text-sm lg:w-60">
             <span className="font-semibold">Posted by: </span>
             {patient.firstname + " " + patient.lastname}
           </h1>
@@ -23,7 +23,6 @@ const FeedBackCard = ({ feedback }) => {
             {new Date(feedback.feedbackpostdate).toLocaleDateString()}
           </p>
         </div>
-
         {currUserData.role == "Patient" && (
           <h1 className="text-sm">
             <span className="font-semibold">To: </span>
